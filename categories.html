@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- BootStrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Styling Css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <title>Gro Cart</title>
+</head>
+
+<body>
+  <!--Start Header -->
+  <div class="header">
+    <div class="container">
+      <div class="nav-info">
+        <div class="nav-logo-location">
+          <div class="logo">
+            <a href="index.html">
+              <img src="https://placehold.co/40x40.png" alt="logo" />
+              جروكارت
+            </a>
+          </div>
+          <div class="location">
+            <select name="place" id="place">
+              <option value="place-1">المنصورة,توريل</option>
+              <option value="place-2">قناه السويس</option>
+              <option value="place-3">المحافظة</option>
+            </select>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+        </div>
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="ابحث عن اسم المنتج"
+          />
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div class="user-info">
+          <div class="user-img">
+            <img
+              src="./img/profile.png"
+              alt="user"
+              onclick="window.location.href='dashboard-user.html'"
+            />
+          </div>
+          <div class="user-about">
+            <h3>أهلا محمد</h3>
+            <p>حساب شخصي</p>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bottom mt-3">
+        <div class="cart">
+          <div class="cart-btn">
+            <span>السلة</span>
+            <button onclick="window.location.href='cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="nav-links">
+          <ul
+            class="d-flex align-items-center justify-content-center gap-4 mb-0"
+          >
+            <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+            <li><a href="shops.html">المتاجر المميزه</a></li>
+            <li><a href="categories.html">الفئات</a></li>
+            <li><a href="blog.html">المقالات</a></li>
+            <li><a href="contactUs.html">تواصل معنا</a></li>
+          </ul>
+        </div>
+        <div class="nav-icon">
+          <span>
+            <a href="contactUs.html">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </span>
+          <span>
+            <a href="wishList.html">
+              <i class="fa-regular fa-heart"></i>
+            </a>
+          </span>
+          <span>
+            <a href="dashboard-user.html">
+              <i class="fa-solid fa-gear fa-spin"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <!-- Responsive -->
+      <div class="nav-infoR">
+        <div class="cart">
+          <div class="cart-btn">
+            <button onclick="window.Location.href='cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+        </div>
+        <div class="location">
+          <select name="place" id="placeR">
+            <option value="place-1">المنصورة,توريل</option>
+            <option value="place-2">قناه السويس</option>
+            <option value="place-3">المحافظة</option>
+          </select>
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <div class="nav-links">
+          <ul
+            class="d-flex align-items-center justify-content-center gap-2 mb-0"
+          >
+            <li class="user-info">
+              <div class="user-img">
+                <img src="./img/profile.png" alt="user" />
+              </div>
+              <div class="user-about">
+                <h3>أهلا محمد</h3>
+                <p>حساب شخصي</p>
+              </div>
+            </li>
+            <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+            <li><a href="shops.html">المتاجر المميزه</a></li>
+            <li><a href="categories.html">الفئات</a></li>
+            <li><a href="blog.html">المقالات</a></li>
+            <li><a href="contactUs.html">تواصل معنا</a></li>
+            <li>
+              <div class="nav-icon">
+                <span>
+                  <a href="contactUs.html" class="no-hover">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="wishList.html " class="no-hover">
+                    <i class="fa-regular fa-heart"></i>
+                  </a>
+                </span>
+                <span>
+                  <a href="dashboard-user.html" class="no-hover">
+                    <i class="fa-solid fa-gear fa-spin"></i>
+                  </a>
+                </span>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </div>
+      <div class="searchR mt-3">
+        <input
+          type="search"
+          name="search"
+          id="searchR"
+          placeholder="ابحث عن اسم المنتج"
+        />
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+      </div>
+      <!-- Responsive -->
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Start Position -->
+  <div class="section-navigator">
+    <img src="./img/navimg.jpg" class="img-nav reverse" alt="Navigation Image" />
+    <div class="overlay">
+      <a href="#">الصفحة الرئيسية <span>></span></a>
+      <a href="#" class="section-navigator-active">محلاتنا</a>
+    </div>
+  </div>
+
+  <!-- End Position -->
+
+  <!-- Start Filter -->
+  <div class="filter">
+    <div class="container p-4">
+      <div class="filter-wrap d-flex justify-content-between align-items-center flex-wrap">
+        <div class="filter-btn">
+          <button><i class="fa-solid fa-sliders"></i> filter</button>
+        </div>
+
+        <div class="filter-sort">
+          <select id="select" dir="ltr">
+            <option value="Latest">Latest</option>
+            <option value="Date">Date</option>
+            <option value="Older">Older</option>
+          </select>
+          <span> : Sort by</span>
+        </div>
+        <div class="filter-result">
+          <p class="mb-0 d-flex flex-row-reverse gap-2">
+            <span class="fw-bold">70</span> Results Found
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Filter -->
+
+  <!-- Start Categories -->
+  <div class="categories">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-3 cat-tag">
+          <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="search-bar" placeholder="Search..." />
+          </div>
+          <div class="cate">
+            <h2>أهم الفئات</h2>
+            <ul>
+              <li>فواكهه طازجه <span>(134)</span></li>
+              <li>خضروات <span>(150)</span></li>
+              <li>طبخ <span>(54)</span></li>
+              <li>مقبلات <span>(47)</span></li>
+              <li>المشروبات <span>(43)</span></li>
+              <li>الجمال والصحة <span>(28)</span></li>
+              <li>الخبز والمخبز <span>(15)</span></li>
+            </ul>
+          </div>
+          <div class="tags">
+            <h2>أهم العلامات</h2>
+            <div class="tag-list">
+              <span class="tag">الصحه</span>
+              <span class="tag active"> دهون أقل</span>
+              <span class="tag">نباتي</span>
+              <span class="tag">خبز</span>
+              <span class="tag"> أطعمة الأطفال</span>
+              <span class="tag">الفيتامينات</span>
+              <span class="tag">مقبلات</span>
+              <span class="tag">لحوم</span>
+              <span class="tag">غداء</span>
+              <span class="tag">عشاء</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8 col-md-12 shops">
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-1.png" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">هايبر ميلانو</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-2.jpg" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">النقيطي العطار</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-3.jpg" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">دكتور الفاكهة</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-1.png" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">هايبر ميلانو</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-2.jpg" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">النقيطي العطار</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <div class="categories-card">
+            <div class="image-container">
+              <img src="./img/img-3.jpg" alt="Dr. Fruits" class="card-image" />
+            </div>
+            <div class="details">
+              <div class="info d-flex justify-content-between align-items-center">
+                <span>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  4.9</span>
+                <h2 class="title">دكتور الفاكهة</h2>
+              </div>
+              <div class="rate d-flex justify-content-between">
+                <a href="shopPage.html" class="visit">
+                  تسوق الأن <i class="fa-solid fa-arrow-left"></i>
+                </a>
+                <span dir="ltr"><i class="fa-solid fa-tag"></i> فواكهه</span>
+              </div>
+            </div>
+          </div>
+          <!-- navigate -->
+          <div class="navigate">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous">
+                  <span aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">25</a></li>
+              <li class="page-item"><a class="page-link" href="#">...</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next">
+                  <span aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Categories -->
+
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="foot-wrap">
+        <div class="info">
+          <h4>معلومات</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> معلومات عنا</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> التعليمات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h4>بحاجه الي مساعده</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> 12345678910+</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> 12345678910+</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h4>معلومات</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> معلومات عنا</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> التعليمات
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h4>عميل</h4>
+          <ul>
+            <li>
+              <a href="#"> <i class="fa-solid fa-angles-left"></i> حسابي</a>
+            </li>
+            <li>
+              <a href="#"> <i class="fa-solid fa-angles-left"></i> الطلبات</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> طلبات العوده</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> منصه الرغبات</a>
+            </li>
+          </ul>
+        </div>
+        <div class="info">
+          <h4>بحاجه الي مساعده</h4>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> 12345678910+</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> 12345678910+</a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="search text-center mt-3">
+        <button type="submit">اشترك</button>
+        <input type="email" name="footerEmail" id="footEmail" placeholder="ادخل الإيميل الخاص بك" dir="ltr" />
+      </div>
+      <!-- <div class="end-footer text-center mt-3">
+          <p>جميع الحقوق محفوظه فرق عمل EgyTigers</p>
+        </div> -->
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

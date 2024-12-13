@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Styling Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Gro Cart</title>
+  </head>
+
+  <body id="setting">
+    <!--Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="nav-info">
+          <div class="nav-logo-location">
+            <div class="logo">
+              <a href="index.html">
+                <img src="https://placehold.co/40x40.png" alt="logo" />
+                جروكارت
+              </a>
+            </div>
+            <div class="location">
+              <select name="place" id="place">
+                <option value="place-1">المنصورة,توريل</option>
+                <option value="place-2">قناه السويس</option>
+                <option value="place-3">المحافظة</option>
+              </select>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="ابحث عن اسم المنتج"
+            />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="user-info">
+            <div class="user-img">
+              <img
+                src="./img/profile.png"
+                alt="user"
+                onclick="window.location.href='dashboard-user.html'"
+              />
+            </div>
+            <div class="user-about">
+              <h3>أهلا محمد</h3>
+              <p>حساب شخصي</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bottom mt-3">
+          <div class="cart">
+            <div class="cart-btn">
+              <span>السلة</span>
+              <button onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-4 mb-0"
+            >
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <span>
+              <a href="contactUs.html">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </span>
+            <span>
+              <a href="wishList.html">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </span>
+            <span>
+              <a href="dashboard-user.html">
+                <i class="fa-solid fa-gear fa-spin"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- Responsive -->
+        <div class="nav-infoR">
+          <div class="cart">
+            <div class="cart-btn">
+              <button onclick="window.Location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="location">
+            <select name="place" id="placeR">
+              <option value="place-1">المنصورة,توريل</option>
+              <option value="place-2">قناه السويس</option>
+              <option value="place-3">المحافظة</option>
+            </select>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-2 mb-0"
+            >
+              <li class="user-info">
+                <div class="user-img">
+                  <img src="./img/profile.png" alt="user" />
+                </div>
+                <div class="user-about">
+                  <h3>أهلا محمد</h3>
+                  <p>حساب شخصي</p>
+                </div>
+              </li>
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+              <li>
+                <div class="nav-icon">
+                  <span>
+                    <a href="contactUs.html" class="no-hover">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="wishList.html " class="no-hover">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="dashboard-user.html" class="no-hover">
+                      <i class="fa-solid fa-gear fa-spin"></i>
+                    </a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="searchR mt-3">
+          <input
+            type="search"
+            name="search"
+            id="searchR"
+            placeholder="ابحث عن اسم المنتج"
+          />
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <!-- Responsive -->
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Position -->
+    <div class="section-navigator">
+      <img
+        src="./img/navimg.jpg"
+        class="img-nav reverse"
+        alt="Navigation Image"
+      />
+      <div class="overlay">
+        <a href="./index.html">الصفحة الرئيسية <span>></span></a>
+        <a href="./dashboard-user.html">لوحة التحكم <span>></span></a>
+        <a href="./setting.html" class="section-navigator-active">الإعدادات</a>
+      </div>
+    </div>
+    <!-- End Position -->
+
+    <!-- Start DashBoard -->
+    <div class="dashboard">
+      <div class="sidebar">
+        <h4 class="position-relative text-center mt-0">جرو كارت</h4>
+        <ul>
+          <li>
+            <a
+              class="d-flex align-items-center justify-content-end"
+              href="dashboard-user.html"
+            >
+              <span>لوحه التحكم</span>
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="active d-flex align-items-center justify-content-end"
+              href="setting.html"
+            >
+              <span>الإعدادات</span>
+              <i class="fa-solid fa-gear fa-fw"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center justify-content-end"
+              href="order-history.html"
+            >
+              <span>سجل الطلبات</span>
+              <i class="fa-solid fa-clock-rotate-left fa-fw"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center justify-content-end"
+              href="cart.html"
+            >
+              <span>عربه التسوق</span>
+              <i class="fa-solid fa-cart-shopping fa-fw"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center justify-content-end"
+              href="wishList.html"
+            >
+              <span>المفضله</span>
+              <i class="fa-regular fa-heart fa-fw"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="d-flex align-items-center justify-content-end"
+              href="index.html"
+            >
+              <span>تسجيل الخروج</span>
+              <i class="fa-solid fa-arrow-right-from-bracket fa-fw"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <h1 class="position-relative">الإعدادات</h1>
+        <div class="setting-page">
+          <div class="setting-box">
+            <h2 class="fw-bold">
+              <i class="fa-solid fa-gear fa-spin"></i> إعدادات الحساب
+            </h2>
+            <div class="row">
+              <!-- Left side form -->
+              <div class="col-12 col-md-6">
+                <form>
+                  <div class="mb-3">
+                    <label for="firstName" class="form-label"
+                      >الأسم الأول :</label
+                    >
+                    <input
+                      type="text"
+                      class="setting-box-input"
+                      autocomplete="yes"
+                      id="firstName"
+                      placeholder="الأسم الأول..."
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="lastName" class="form-label"
+                      >الأسم الأخير :</label
+                    >
+                    <input
+                      type="text"
+                      class="setting-box-input"
+                      autocomplete="yes"
+                      id="lastName"
+                      placeholder="الأسم الأخير..."
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label"
+                      >البريد الإلكتروني</label
+                    >
+                    <input
+                      type="email"
+                      class="setting-box-input"
+                      autocomplete="yes"
+                      id="email"
+                      placeholder="البريد الإلكتروني..."
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="phoneNumber" class="form-label"
+                      >الرقم الشخصي</label
+                    >
+                    <input
+                      type="text"
+                      class="setting-box-input"
+                      autocomplete="yes"
+                      id="phoneNumber"
+                      placeholder="الرقم الخاص بك..."
+                    />
+                  </div>
+                  <button type="submit">حفظ التغيرات</button>
+                </form>
+              </div>
+
+              <!-- Right side image -->
+              <div class="col-12 col-md-6">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div
+                    class="image-container d-flex ustify-content-center align-items-center flex-column mt-4"
+                  >
+                    <img
+                      src="./img/profile.png"
+                      alt="Profile Image"
+                      class="profile-image"
+                      id="profileImg"
+                    />
+                    <input
+                      type="file"
+                      id="chooseImage"
+                      style="display: none"
+                      onchange="loadImage(event)"
+                    />
+                    <button
+                      class="choose-image-btn"
+                      onclick="document.getElementById('chooseImage').click();"
+                    >
+                      أختر صورة
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- form -->
+          </div>
+          <div class="setting-box">
+            <h2 class="fw-bold">
+              <i class="fa-solid fa-unlock-keyhole"></i> تغير كلمه المرور
+            </h2>
+            <div class="row">
+              <!-- Left side form -->
+              <div class="col-md-6">
+                <form>
+                  <div class="mb-3 showHide">
+                    <label for="cPass" class="form-label"
+                      >كلمه السر الحالية:</label
+                    >
+                    <input
+                      type="password"
+                      class="setting-box-input"
+                      id="cPass"
+                      placeholder="كلمه السر الحالية..."
+                      autocomplete="off"
+                    />
+                    <i class="fa-regular fa-eye"></i>
+                  </div>
+
+                  <div class="mb-3 showHide">
+                    <label for="Pass" class="form-label"
+                      >كلمه السر الجديدة:</label
+                    >
+                    <input
+                      type="password"
+                      class="setting-box-input"
+                      id="Pass"
+                      placeholder="كلمه السر الجديدة..."
+                      autocomplete="off"
+                    />
+                    <i class="fa-regular fa-eye"></i>
+                    <p id="msg" style="display: none">
+                      كلمة السر: <span id="strength"></span>
+                    </p>
+                  </div>
+
+                  <div class="mb-3 showHide">
+                    <label for="Pass2" class="form-label"
+                      >تأكيد كلمه السر:</label
+                    >
+                    <input
+                      type="password"
+                      class="setting-box-input"
+                      id="Pass2"
+                      placeholder="تأكيد كلمه السر..."
+                      autocomplete="off"
+                    />
+                    <i class="fa-regular fa-eye"></i>
+                    <p id="msg2" style="display: none">
+                      كلمة المرور متطابقة: <span id="match-status"></span>
+                    </p>
+                  </div>
+
+                  <button type="submit">تحديث كلمه السر</button>
+                </form>
+              </div>
+
+              <!-- Right side image -->
+              <div
+                class="col-md-6 d-flex justify-content-center align-items-center"
+              >
+                <div class="image-container-illus mt-4">
+                  <img src="./img/secure.svg" alt="Secure" />
+                </div>
+              </div>
+            </div>
+            <!-- form -->
+          </div>
+          <div class="setting-box">
+            <h2 class="fw-bold">
+              <i class="fa-solid fa-file-invoice-dollar"></i> عنوان الفواتير
+            </h2>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="firstName" class="form-label">الاسم الأول</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="first_Name"
+                    placeholder="الأسم الأول"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="lastName" class="form-label">اسم العائلة</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="last_Name"
+                    placeholder="اسم العائله"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="companyName" class="form-label"
+                    >اسم الشركة (اختياري)</label
+                  >
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="companyName"
+                    placeholder="اسم الشركة"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="streetAddress" class="form-label"
+                    >عنوان الشارع</label
+                  >
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="streetAddress"
+                    placeholder="عنوان الشارع"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="country" class="form-label">المحافظة</label>
+                  <select class="form-select" id="country" autocomplete="off">
+                    <option selected>الدقهلية</option>
+                    <option>الأسكندرية</option>
+                    <option>كفر الشيخ</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="state" class="form-label"> البلد / المنطقة</label>
+                  <select class="form-select" id="state">
+                    <option selected>طلخا</option>
+                    <option>قناة السويس</option>
+                    <option>الترعة</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="zipCode" class="form-label">الرمز البريدي</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="zipCode"
+                    placeholder="الرمز البريدي"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label"
+                    >البريد الإلكتروني</label
+                  >
+                  <input
+                    type="email"
+                    class="setting-box-input"
+                    id="email_"
+                    placeholder="البريد الإلكتروني"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">رقم الهاتف</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="phone"
+                    placeholder="(+20) 0123-456-789"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">
+                حفظ التغييرات
+              </button>
+            </form>
+          </div>
+          <div class="setting-box">
+            <h2 class="fw-bold">
+              <i class="fa-regular fa-credit-card"></i> إضافة بطاقة ائتمان
+            </h2>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label for="cardNumber" class="form-label">رقم البطاقة</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="cardNumber"
+                    placeholder="أدخل رقم البطاقة"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="expirationDate" class="form-label"
+                    >تاريخ الانتهاء</label
+                  >
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="expirationDate"
+                    placeholder="22/8"
+                    autocomplete="off"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="ccv" class="form-label">CCV</label>
+                  <input
+                    type="text"
+                    class="setting-box-input"
+                    id="ccv"
+                    placeholder="555"
+                    autocomplete="off"
+                  />
+                </div>
+              </div>
+              <button type="submit" class="btn btn-success">حفظ البطاقة</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End DashBoard -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="foot-wrap">
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>عميل</h4>
+            <ul>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> حسابي</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> الطلبات</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> طلبات العوده</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> منصه الرغبات</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search text-center mt-3">
+          <button type="submit">اشترك</button>
+          <input
+            type="email"
+            name="footerEmail"
+            id="footEmail"
+            placeholder="ادخل الإيميل الخاص بك"
+            dir="ltr"
+          />
+        </div>
+        <!-- <div class="end-footer text-center mt-3">
+          <p>جميع الحقوق محفوظه فرق عمل EgyTigers</p>
+        </div> -->
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

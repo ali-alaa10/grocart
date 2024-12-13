@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Styling Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <title>Gro Cart</title>
+  </head>
+
+  <body id="main">
+    <!--Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="nav-info">
+          <div class="nav-logo-location">
+            <div class="logo">
+              <a href="index.html">
+                <img src="https://placehold.co/40x40.png" alt="logo" />
+                جروكارت
+              </a>
+            </div>
+            <div class="location">
+              <select name="place" id="place">
+                <option value="place-1">المنصورة,توريل</option>
+                <option value="place-2">قناه السويس</option>
+                <option value="place-3">المحافظة</option>
+              </select>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="ابحث عن اسم المنتج"
+            />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="user-info">
+            <div class="user-img">
+              <img
+                src="./img/profile.png"
+                alt="user"
+                onclick="window.location.href='dashboard-user.html'"
+              />
+            </div>
+            <div class="user-about">
+              <h3>أهلا محمد</h3>
+              <p>حساب شخصي</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bottom mt-3">
+          <div class="cart">
+            <div class="cart-btn">
+              <span>السلة</span>
+              <button onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-4 mb-0"
+            >
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <span>
+              <a href="contactUs.html">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </span>
+            <span>
+              <a href="wishList.html">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </span>
+            <span>
+              <a href="dashboard-user.html">
+                <i class="fa-solid fa-gear fa-spin"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- Responsive -->
+        <div class="nav-infoR">
+          <div class="cart">
+            <div class="cart-btn">
+              <button onclick="window.Location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="location">
+            <select name="place" id="placeR">
+              <option value="place-1">المنصورة,توريل</option>
+              <option value="place-2">قناه السويس</option>
+              <option value="place-3">المحافظة</option>
+            </select>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-2 mb-0"
+            >
+              <li class="user-info">
+                <div class="user-img">
+                  <img src="./img/profile.png" alt="user" />
+                </div>
+                <div class="user-about">
+                  <h3>أهلا محمد</h3>
+                  <p>حساب شخصي</p>
+                </div>
+              </li>
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+              <li>
+                <div class="nav-icon">
+                  <span>
+                    <a href="contactUs.html" class="no-hover">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="wishList.html " class="no-hover">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="dashboard-user.html" class="no-hover">
+                      <i class="fa-solid fa-gear fa-spin"></i>
+                    </a>
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+        <div class="searchR mt-3">
+          <input
+            type="search"
+            name="search"
+            id="searchR"
+            placeholder="ابحث عن اسم المنتج"
+          />
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <!-- Responsive -->
+      </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Your Need -->
+    <div class="your-need">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          كل احتياجاتك اليومية مع <span class="span-main">جروكارت</span>
+        </h2>
+        <p>اطلب الفواكه والخضروات الطازجة اليوم لتصلك إلى بيتك</p>
+      </div>
+      <div class="container">
+        <div class="swiper mySwiper" id="swiper3">
+          <div class="swiper-wrapper">
+            <div class="content swiper-slide">
+              <img src="./img/img-7.jpg" alt="Shops" />
+            </div>
+            <div class="content swiper-slide">
+              <img src="./img/img-8.jpg" alt="Shops" />
+            </div>
+            <div class="content swiper-slide">
+              <img src="./img/img-9.jpg" alt="Shops" />
+            </div>
+            <div class="content swiper-slide">
+              <img src="./img/img-7.jpg" alt="Shops" />
+            </div>
+            <div class="content swiper-slide">
+              <img src="./img/img-8.jpg" alt="Shops" />
+            </div>
+          </div>
+
+          <div class="swiper-button-next" id="bt1">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </div>
+          <div class="swiper-button-prev" id="bt12">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+        <button class="explore-btn">استكشف العروض الآن</button>
+      </div>
+    </div>
+    <!-- End Your Need -->
+
+    <!-- Start Product Type -->
+    <div class="product-types">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-3 product-head">
+          فئات <span class="span-main">منتجاتنا</span>
+        </h2>
+        <p class="text-center">
+          ابحث عن كل ما تحتاجه من المنتجات الطازجة إلى الضروريات المنزلية
+        </p>
+        <div class="row justify-content-around">
+          <div class="our-product col-lg-3 col-md-5 col-sm-7 mt-5">
+            <div class="product-info">
+              <h4>العطارة</h4>
+              <p>اكثر من 12 محل</p>
+            </div>
+            <div class="product-img">
+              <img src="./img/img-5.jpg" alt="product" />
+              <button><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+          <div class="our-product col-lg-3 col-md-5 col-sm-7 mt-5">
+            <div class="product-info">
+              <h4>الفواكة</h4>
+              <p>اكثر من 12 محل</p>
+            </div>
+            <div class="product-img">
+              <img src="./img/img-4.jpg" alt="product" />
+              <button><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+          <div class="our-product col-lg-3 col-md-5 col-sm-7 mt-5">
+            <div class="product-info">
+              <h4>الخضروات</h4>
+              <p>اكثر من 12 محل</p>
+            </div>
+            <div class="product-img">
+              <img src="./img/img-6.jpg" alt="product" />
+              <button><i class="fa-solid fa-arrow-right-long"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Product Type -->
+
+    <!-- Start Popular Shop -->
+    <div class="popular-shop">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          أكثر <span class="span-main">المتاجر الشائعة</span>
+        </h2>
+        <p>ابحث عن كل ما تحتاجه من المنتجات الطازجة إلى الضروريات المنزلية</p>
+      </div>
+      <div class="container"></div>
+      <div class="swiper mySwiper" id="swiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/img-1.png" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-2.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-3.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-10.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-2.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-3.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-1.png" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-2.jpg" alt="Shops" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/img-3.jpg" alt="Shops" />
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination" id="sw1"></div>
+      <div class="container d-flex justify-content-center">
+        <a href="categories.html">
+          <button type="submit" class="shop text-center">تسوق الأن</button>
+        </a>
+      </div>
+    </div>
+    <!-- End Popular Shop -->
+
+    <!-- Start Services -->
+    <div class="services">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          ما الخدمات <span class="span-main">التي تنتظرك ؟ </span>
+        </h2>
+        <p>ابحث عن كل ما تحتاجه من المنتجات الطازجة إلى الضروريات المنزلية</p>
+      </div>
+      <div class="container">
+        <div class="d-flex align-items-start justify-content-start">
+          <a href="contactUs.html">
+            <button class="chat">
+              <i class="fa-solid fa-comments"></i> الدردشه معنا
+            </button>
+          </a>
+        </div>
+        <div
+          class="service-container d-flex align-items-center justify-content-between position-relative"
+        >
+          <div class="service text-center">
+            <img src="img/money.svg" alt="" />
+            <h3>الدفع بعد استلام المنتجات</h3>
+            <p>دعونا نساعدك في ملء مطبخك بكل ما تحتاجه!</p>
+          </div>
+
+          <div class="dotted-arrow-1">
+            <img src="img/arrow-1.png" alt="" />
+          </div>
+
+          <div class="service text-center">
+            <img src="img/deliver.svg" alt="" />
+            <h3>التوصيل من 1-3 ساعات</h3>
+            <p>وجهتنا الوحيدة لتلبية جميع احتياجاتك من البقالة.</p>
+          </div>
+
+          <div class="dotted-arrow-2">
+            <img src="img/arrow-1.png" alt="" />
+          </div>
+
+          <div class="service text-center">
+            <img src="img/quality.svg" alt="" />
+            <h3>ضمان الجودة</h3>
+            <p>
+              تجنب متاعب الانتظار وكن مطمئنًا للجودة. سيسعى فريقنا لتسليم طلباتك
+              إليك في الوقت المناسب.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+
+    <!-- Start Feed Back -->
+    <div class="feed-back">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          ماذا يقول <span class="span-main"> عملاؤنا عنا</span>
+        </h2>
+      </div>
+      <div class="container">
+        <div class="fancy-background"></div>
+        <div class="swiper mySwiper" id="swiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/profile.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/profile2.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/profile.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/profile2.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/profile2.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/profile.png" alt="clint" />
+              <h2>Ahmed Ali</h2>
+              <p>Lead Designer</p>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corrupti, numquam, repellat corporis dolores doloribus nostrum
+                sapiente aut natus hic ipsa perferendis voluptas enim
+                perspiciatis doloremque aliquid tenetur asperiores tempora
+                culpa?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev" id="sw4"></div>
+        <div class="swiper-button-next" id="sw42"></div>
+      </div>
+    </div>
+    <!-- End Feed Back -->
+
+    <!-- Start Accordion -->
+    <div class="accordion">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          الأسئله <span class="span-main">الشائعة</span>
+        </h2>
+        <p>
+          هل لديك أسئلة؟لدينا الإجابات! يمكنك العثور علي كل ما تحتاج إالي معرفته
+          حول خدمة توصيل البقالة لدينا هنا
+        </p>
+      </div>
+      <div class="container">
+        <div class="accordion-items">
+          <div class="item">
+            <div class="head fw-bold">
+              س: ما هي سياستكم بشأن المبالغ المستردة ؟
+            </div>
+            <div class="body">
+              <div class="content">
+                ج: تجنب متاعب انتظار دورك في محلات السوبر ماركت,سيضمن فريقنا
+                تسليم طلباتك إليك في الوقت المناسب تجنب متاعب انتظار دورك في
+                محلات السوبر ماركت
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="head fw-bold">س: كم تكلفة التوصيل ؟</div>
+            <div class="body">
+              <div class="content">
+                ج: تجنب متاعب انتظار دورك في محلات السوبر ماركت,سيضمن فريقنا
+                تسليم طلباتك إليك في الوقت المناسب تجنب متاعب انتظار دورك في
+                محلات السوبر ماركت
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="head fw-bold">س: ما هي ساعات التسليم الخاصه بك ؟</div>
+            <div class="body">
+              <div class="content">
+                ج: تجنب متاعب انتظار دورك في محلات السوبر ماركت,سيضمن فريقنا
+                تسليم طلباتك إليك في الوقت المناسب تجنب متاعب انتظار دورك في
+                محلات السوبر ماركت
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="head fw-bold">س: هل تخدم منطقتي ؟</div>
+            <div class="body">
+              <div class="content">
+                ج: تجنب متاعب انتظار دورك في محلات السوبر ماركت,سيضمن فريقنا
+                تسليم طلباتك إليك في الوقت المناسب تجنب متاعب انتظار دورك في
+                محلات السوبر ماركت
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="head fw-bold">س: ماذا عن الأسعار ؟</div>
+            <div class="body">
+              <div class="content">
+                ج: تجنب متاعب انتظار دورك في محلات السوبر ماركت,سيضمن فريقنا
+                تسليم طلباتك إليك في الوقت المناسب تجنب متاعب انتظار دورك في
+                محلات السوبر ماركت
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more-ask d-flex align-items-center justify-content-between">
+          <div class="ask">
+            <h3>لا تزال لديك اسئله ؟</h3>
+            <p>
+              لا يمكنك العثور علي الإجابة التي تبحث عنها ؟ يرجي الدردشه مع
+              فريقنا الودود.
+            </p>
+          </div>
+          <div class="ask-btn">
+            <a href="contactUs.html">
+              <button type="button">تواصل معنا</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Accordion -->
+
+    <!-- Start Topics -->
+    <div class="topics">
+      <div class="section-top text-center">
+        <h2 class="fw-bold mb-3 product-head">
+          احدث <span class="span-main">المقالات</span>
+        </h2>
+        <p>
+          هل لديك أسئلة؟لدينا الإجابات! يمكنك العثور علي كل ما تحتاج إالي معرفته
+          حول خدمة توصيل البقالة لدينا هنا
+        </p>
+      </div>
+      <div class="container">
+        <div class="d-flex align-items-start justify-content-start">
+          <a href="blog.html">
+            <button class="chat">
+              <i class="fa-solid fa-scroll"></i> تصفح المقالات
+            </button>
+          </a>
+        </div>
+        <div class="swiper mySwiper" id="swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./img/img-7.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الخضروات</h3>
+                <p>
+                  الخضروات هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img-9.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الفواكة</h3>
+                <p>
+                  الفواكة هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img-7.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الخضروات</h3>
+                <p>
+                  الخضروات هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img-7.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الخضروات</h3>
+                <p>
+                  الخضروات هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img-9.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الفواكه</h3>
+                <p>
+                  الخضروات هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/img-9.jpg" alt="Shops" />
+              <div class="topic-info">
+                <h3>مقالات عن الفواكه</h3>
+                <p>
+                  الخضروات هي من الاساسيات المنزليه ويجب ان توجد في كل المنازل
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Topics -->
+
+    <!-- Start Order -->
+    <div class="order-process">
+      <div class="container">
+        <h2 class="text-center">
+          كيفية <span class="span-main">تقديم الطلب</span> في دقائق
+        </h2>
+        <p class="text-center">
+          اطلب الفواكه والخضروات الطازجة اليوم لتصل إلى باب بيتك
+        </p>
+        <div class="row">
+          <div class="col-lg-5 g-4 m-auto col-md-6 mb-4">
+            <div
+              class="process-item d-flex flex-row-reverse justify-content-between p-5"
+            >
+              <div class="icon-mirror">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="text">
+                  <h4>أضف إلى السلة</h4>
+                  <p>
+                    أضف العناصر التي اخترتها بسهولة إلى سلة التسوق الخاصة بك
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 g-4 m-auto col-md-6 mb-4">
+            <div
+              class="process-item d-flex flex-row-reverse justify-content-between p-5"
+            >
+              <div class="icon-mirror">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h4>تصفح مجموعتنا المختارة</h4>
+                <p>
+                  ابحث عن كل ما تحتاجه من المنتجات الطازجة إلى الضروريات
+                  المنزلية
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 g-4 m-auto col-md-6 mb-4">
+            <div
+              class="process-item d-flex flex-row-reverse justify-content-between p-5"
+            >
+              <div class="icon-mirror">
+                <i class="fa-solid fa-business-time"></i>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <i class="fa-solid fa-business-time"></i>
+                </div>
+                <h4>اختر وقت التسليم</h4>
+                <p>حدد فترة تسليم مناسبة تناسب جدولك الزمني</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 g-4 m-auto col-md-6 mb-4">
+            <div
+              class="process-item d-flex flex-row-reverse justify-content-between p-5"
+            >
+              <div class="icon-mirror">
+                <i class="fa-regular fa-face-smile"></i>
+              </div>
+              <div class="text">
+                <div class="icon">
+                  <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <h4>استرخِ واسترح</h4>
+                <p>سيتم تسليم الطلب الخاص بك مباشرة إلى باب منزلك</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Order -->
+
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="foot-wrap">
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="contactUs.html"
+                  ><i class="fa-solid fa-angles-left"></i> اتصل بنا</a
+                >
+              </li>
+              <li>
+                <a href="order-history.html">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="contactUs.html"
+                  ><i class="fa-solid fa-angles-left"></i> اتصل بنا</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>عميل</h4>
+            <ul>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> حسابي</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> الطلبات</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> طلبات العوده</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> منصه الرغبات</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search text-center mt-3">
+          <button type="submit">اشترك</button>
+          <input
+            type="email"
+            name="footerEmail"
+            id="footEmail"
+            placeholder="ادخل الإيميل الخاص بك"
+            dir="ltr"
+          />
+        </div>
+        <!-- <div class="end-footer text-center mt-3">
+          <p>جميع الحقوق محفوظه فرق عمل EgyTigers</p>
+        </div> -->
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
