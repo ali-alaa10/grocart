@@ -56,6 +56,7 @@ body {
   width: 15px;
 }
 ::-webkit-scrollbar-track {
+  border-radius: 15px;
   background-color: #ccc;
 }
 ::-webkit-scrollbar-thumb {
@@ -355,13 +356,13 @@ body {
   }
 
   .no-hover::before {
-    content: none !important; 
-}
+    content: none !important;
+  }
 
-.no-hover:hover {
+  .no-hover:hover {
     all: unset !important;
-    pointer-events: none; 
-}
+    pointer-events: none;
+  }
 
   .header .nav-links ul li a::before {
     content: "";
@@ -544,7 +545,7 @@ body {
 .product-types {
   margin-top: 80px;
   margin-bottom: 80px;
-  background-image: url(../img/tasty-colorful-appetizing-cooked-spaghetti-italian-pasta-with-tomato-sauce-fresh-garlic.jpg);
+  background-image: url(../img/fot-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 40px;
@@ -563,6 +564,7 @@ body {
   -webkit-backdrop-filter: blur(5.6px);
   backdrop-filter: blur(5.6px);
   border: 1px solid rgba(255, 255, 255, 0.29);
+  width: 340px;
 }
 
 .product-types .our-product:hover {
@@ -572,6 +574,7 @@ body {
 .product-types .our-product .product-info {
   border-bottom: 1px solid #ccc;
   padding: 25px 16px 0;
+  width: 100%;
 }
 .product-types .our-product .product-info h4 {
   margin-bottom: 15px;
@@ -586,7 +589,7 @@ body {
 }
 .product-types .our-product .product-img img {
   border-radius: 25px;
-  width: 250px;
+  width: 100% !important;
   height: 300px;
   width: 110%;
 }
@@ -1026,7 +1029,6 @@ body {
   color: white;
   width: 30px;
   height: 30px;
-  padding-bottom: 5px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1069,7 +1071,7 @@ body {
   color: #fff;
   border: none;
   outline: none;
-  padding: 12px 45px;
+  padding: 12px 24px;
   border-radius: 25px;
   transition: var(--main-transition);
 }
@@ -1182,7 +1184,8 @@ body {
 .order-process {
   margin-top: 80px;
   margin-bottom: 80px;
-  background-image: url(../img/ord-bg.png);
+  background-image: url(../img/fot-bg.png);
+
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px 40px;
@@ -2128,6 +2131,7 @@ body {
 .dashboard .content .content-wrap .addresses p {
   color: var(--p-color);
   font-weight: 600;
+  font-size: 22px;
 }
 .dashboard .content .content-wrap .addresses p:last-child span {
   direction: ltr;
@@ -2179,6 +2183,7 @@ body {
 }
 .projects table td {
   padding: 15px;
+  text-align: center;
 }
 .projects tbody td {
   border-bottom: 1px solid #eee;
@@ -2329,12 +2334,14 @@ body {
   padding: 10px 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  outline: none;
 }
 @media (min-width: 768px) {
   .setting-page .setting-box form button {
     width: 50%;
     margin: auto;
     font-size: 14px;
+    margin-top: 10px;
   }
 }
 @media (max-width: 576px) {

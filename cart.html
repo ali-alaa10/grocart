@@ -32,178 +32,183 @@
   </head>
 
   <body>
-
-        <!--Start Header -->
-        <div class="header">
-          <div class="container">
-            <div class="nav-info">
-              <div class="nav-logo-location">
-                <div class="logo">
-                  <a href="index.html">
-                    <img src="https://placehold.co/40x40.png" alt="logo" />
-                    جروكارت
-                  </a>
-                </div>
-                <div class="location">
-                  <select name="place" id="place">
-                    <option value="place-1">المنصورة,توريل</option>
-                    <option value="place-2">قناه السويس</option>
-                    <option value="place-3">المحافظة</option>
-                  </select>
-                  <i class="fa-solid fa-location-dot"></i>
-                </div>
-              </div>
-              <div class="search">
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  placeholder="ابحث عن اسم المنتج"
+    <!--Start Header -->
+    <div class="header">
+      <div class="container">
+        <div class="nav-info">
+          <div class="nav-logo-location">
+            <div class="logo">
+              <a href="index.html">
+                <img
+                  loading="lazy"
+                  src="https://placehold.co/40x40.png"
+                  alt="logo"
                 />
-                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-              </div>
-              <div class="user-info">
+                جروكارت
+              </a>
+            </div>
+            <div class="location">
+              <select name="place" id="place">
+                <option value="place-1">المنصورة,توريل</option>
+                <option value="place-2">قناه السويس</option>
+                <option value="place-3">المحافظة</option>
+              </select>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+          </div>
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id="search"
+              placeholder="ابحث عن اسم المنتج"
+            />
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </div>
+          <div class="user-info">
+            <div class="user-img">
+              <img
+                loading="lazy"
+                src="./img/profile.png"
+                alt="user"
+                onclick="window.location.href='dashboard-user.html'"
+              />
+            </div>
+            <div class="user-about">
+              <h3>أهلا محمد</h3>
+              <p>حساب شخصي</p>
+            </div>
+          </div>
+        </div>
+        <div class="nav-bottom mt-3">
+          <div class="cart">
+            <div class="cart-btn">
+              <span>السلة</span>
+              <button onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-4 mb-0"
+            >
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="nav-icon">
+            <span>
+              <a href="contactUs.html">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </span>
+            <span>
+              <a href="wishList.html">
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </span>
+            <span>
+              <a href="dashboard-user.html">
+                <i class="fa-solid fa-gear fa-spin"></i>
+              </a>
+            </span>
+          </div>
+        </div>
+        <!-- Responsive -->
+        <div class="nav-infoR">
+          <div class="cart">
+            <div class="cart-btn">
+              <button onclick="window.Location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+          <div class="location">
+            <select name="place" id="placeR">
+              <option value="place-1">المنصورة,توريل</option>
+              <option value="place-2">قناه السويس</option>
+              <option value="place-3">المحافظة</option>
+            </select>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="nav-links">
+            <ul
+              class="d-flex align-items-center justify-content-center gap-2 mb-0"
+            >
+              <li class="user-info">
                 <div class="user-img">
-                  <img
-                    src="./img/profile.png"
-                    alt="user"
-                    onclick="window.location.href='dashboard-user.html'"
-                  />
+                  <img loading="lazy" src="./img/profile.png" alt="user" />
                 </div>
                 <div class="user-about">
                   <h3>أهلا محمد</h3>
                   <p>حساب شخصي</p>
                 </div>
-              </div>
-            </div>
-            <div class="nav-bottom mt-3">
-              <div class="cart">
-                <div class="cart-btn">
-                  <span>السلة</span>
-                  <button onclick="window.location.href='cart.html'">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </button>
+              </li>
+              <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
+              <li><a href="shops.html">المتاجر المميزه</a></li>
+              <li><a href="categories.html">الفئات</a></li>
+              <li><a href="blog.html">المقالات</a></li>
+              <li><a href="contactUs.html">تواصل معنا</a></li>
+              <li>
+                <div class="nav-icon">
+                  <span>
+                    <a href="contactUs.html" class="no-hover">
+                      <i class="fa-regular fa-envelope"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="wishList.html " class="no-hover">
+                      <i class="fa-regular fa-heart"></i>
+                    </a>
+                  </span>
+                  <span>
+                    <a href="dashboard-user.html" class="no-hover">
+                      <i class="fa-solid fa-gear fa-spin"></i>
+                    </a>
+                  </span>
                 </div>
-              </div>
-              <div class="nav-links">
-                <ul
-                  class="d-flex align-items-center justify-content-center gap-4 mb-0"
-                >
-                  <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
-                  <li><a href="shops.html">المتاجر المميزه</a></li>
-                  <li><a href="categories.html">الفئات</a></li>
-                  <li><a href="blog.html">المقالات</a></li>
-                  <li><a href="contactUs.html">تواصل معنا</a></li>
-                </ul>
-              </div>
-              <div class="nav-icon">
-                <span>
-                  <a href="contactUs.html">
-                    <i class="fa-regular fa-envelope"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="wishList.html">
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </span>
-                <span>
-                  <a href="dashboard-user.html">
-                    <i class="fa-solid fa-gear fa-spin"></i>
-                  </a>
-                </span>
-              </div>
+              </li>
+            </ul>
+
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-            <!-- Responsive -->
-            <div class="nav-infoR">
-              <div class="cart">
-                <div class="cart-btn">
-                  <button onclick="window.Location.href='cart.html'">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                  </button>
-                </div>
-              </div>
-              <div class="location">
-                <select name="place" id="placeR">
-                  <option value="place-1">المنصورة,توريل</option>
-                  <option value="place-2">قناه السويس</option>
-                  <option value="place-3">المحافظة</option>
-                </select>
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="nav-links">
-                <ul
-                  class="d-flex align-items-center justify-content-center gap-2 mb-0"
-                >
-                  <li class="user-info">
-                    <div class="user-img">
-                      <img src="./img/profile.png" alt="user" />
-                    </div>
-                    <div class="user-about">
-                      <h3>أهلا محمد</h3>
-                      <p>حساب شخصي</p>
-                    </div>
-                  </li>
-                  <li><a href="index.html" class="active">الصفحه الرئيسية</a></li>
-                  <li><a href="shops.html">المتاجر المميزه</a></li>
-                  <li><a href="categories.html">الفئات</a></li>
-                  <li><a href="blog.html">المقالات</a></li>
-                  <li><a href="contactUs.html">تواصل معنا</a></li>
-                  <li>
-                    <div class="nav-icon">
-                      <span>
-                        <a href="contactUs.html" class="no-hover">
-                          <i class="fa-regular fa-envelope"></i>
-                        </a>
-                      </span>
-                      <span>
-                        <a href="wishList.html " class="no-hover">
-                          <i class="fa-regular fa-heart"></i>
-                        </a>
-                      </span>
-                      <span>
-                        <a href="dashboard-user.html" class="no-hover">
-                          <i class="fa-solid fa-gear fa-spin"></i>
-                        </a>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-    
-                <div class="hamburger">
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                  <span class="bar"></span>
-                </div>
-              </div>
-            </div>
-            <div class="searchR mt-3">
-              <input
-                type="search"
-                name="search"
-                id="searchR"
-                placeholder="ابحث عن اسم المنتج"
-              />
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            </div>
-            <!-- Responsive -->
           </div>
         </div>
-          <!-- End Header -->
+        <div class="searchR mt-3">
+          <input
+            type="search"
+            name="search"
+            id="searchR"
+            placeholder="ابحث عن اسم المنتج"
+          />
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <!-- Responsive -->
+      </div>
+    </div>
+    <!-- End Header -->
 
     <!-- Start Position -->
     <div class="section-navigator">
-        <img
-          src="./img/navimg.jpg"
-          class="img-nav reverse"
-          alt="Navigation Image"
-        />
-        <div class="overlay">
-          <a href="./index.html">الصفحة الرئيسية <span>></span></a>
-          <a href="./cart.html" class="section-navigator-active"> سلة التسوق</a>
-        </div>
+      <img
+        loading="lazy"
+        src="./img/navimg.jpg"
+        class="img-nav reverse"
+        alt="Navigation Image"
+      />
+      <div class="overlay">
+        <a href="./index.html">الصفحة الرئيسية <span>></span></a>
+        <a href="./cart.html" class="section-navigator-active"> سلة التسوق</a>
       </div>
-      <!-- End Position -->
+    </div>
+    <!-- End Position -->
 
     <div class="cart container">
       <h2 class="text-center display-4 p-3 fw-bold">سلة التسوق</h2>
@@ -225,6 +230,7 @@
                 <tr>
                   <td class="cart-product">
                     <img
+                      loading="lazy"
                       src="img/11473559.png"
                       width="50"
                       alt="Green Capsicum"
@@ -245,6 +251,7 @@
                 <tr>
                   <td class="cart-product">
                     <img
+                      loading="lazy"
                       src="img/11473559.png"
                       width="50"
                       alt="Green Capsicum"
@@ -265,6 +272,7 @@
                 <tr>
                   <td class="cart-product">
                     <img
+                      loading="lazy"
                       src="img/11473559.png"
                       width="50"
                       alt="Green Capsicum"
@@ -287,7 +295,7 @@
             <div class="cart-actions">
               <button
                 class="return"
-                onclick="window.location.href='index.html'"
+                onclick="window.location.href='categories.html'"
               >
                 العودة الى المتاجر
               </button>
@@ -325,152 +333,152 @@
 
     <!-- Start Footer -->
     <div class="footer">
-        <div class="container">
-          <div class="foot-wrap">
-            <div class="info">
-              <h4>معلومات</h4>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> التعليمات
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="info">
-              <h4>بحاجه الي مساعده</h4>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> 12345678910+</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> 12345678910+</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> callus@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="info">
-              <h4>معلومات</h4>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
-                  >
-                </li>
-                <li>
-                  <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> التعليمات
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="info">
-              <h4>عميل</h4>
-              <ul>
-                <li>
-                  <a href="#"> <i class="fa-solid fa-angles-left"></i> حسابي</a>
-                </li>
-                <li>
-                  <a href="#"> <i class="fa-solid fa-angles-left"></i> الطلبات</a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> طلبات العوده</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> منصه الرغبات</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="info">
-              <h4>بحاجه الي مساعده</h4>
-              <ul>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> 12345678910+</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> 12345678910+</a
-                  >
-                </li>
-                <li>
-                  <a href="#">
-                    <i class="fa-solid fa-angles-left"></i> callus@gmail.com
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="foot-wrap">
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
           </div>
-          <div class="search text-center mt-3">
-            <button type="submit">اشترك</button>
-            <input
-              type="email"
-              name="footerEmail"
-              id="footEmail"
-              placeholder="ادخل الإيميل الخاص بك"
-              dir="ltr"
-            />
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
           </div>
-          <!-- <div class="end-footer text-center mt-3">
+          <div class="info">
+            <h4>معلومات</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> معلومات عنا</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="fa-solid fa-angles-left"></i> اتصل بنا</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> الشحن و الإرجاع</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> التعليمات
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> سياسة الخصوصيه</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> شروط الاستخدام</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>عميل</h4>
+            <ul>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> حسابي</a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-solid fa-angles-left"></i> الطلبات</a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> طلبات العوده</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> منصه الرغبات</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="info">
+            <h4>بحاجه الي مساعده</h4>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> 12345678910+</a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-solid fa-angles-left"></i> callus@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="search text-center mt-3">
+          <button type="submit">اشترك</button>
+          <input
+            type="email"
+            name="footerEmail"
+            id="footEmail"
+            placeholder="ادخل الإيميل الخاص بك"
+            dir="ltr"
+          />
+        </div>
+        <!-- <div class="end-footer text-center mt-3">
             <p>جميع الحقوق محفوظه فرق عمل EgyTigers</p>
           </div> -->
-        </div>
       </div>
-      <!-- End Footer -->
+    </div>
+    <!-- End Footer -->
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
